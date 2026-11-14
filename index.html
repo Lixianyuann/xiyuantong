@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>锡院通 · 应用内更新源</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+           background: #f2f5fa; color: #1f2937; line-height: 1.6; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 56px; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    .sub { color: #6b7280; font-size: 14px; margin: 0 0 24px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px;
+            padding: 18px 20px; margin-bottom: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+    .card h2 { font-size: 15px; margin: 0 0 10px; color: #2563eb; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    td { padding: 6px 8px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+    td:first-child { color: #6b7280; width: 38%; }
+    code { background: #f3f4f6; padding: 1px 6px; border-radius: 5px; font-size: 13px; word-break: break-all; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .note { font-size: 13px; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>锡院通 · 应用内更新源</h1>
+    <p class="sub">这是 App「我的 → 应用更新」默认指向的更新源。App 会自动拉 <code>update.json</code> 自检，无需手动访问本页。</p>
+
+    <div class="card">
+      <h2>目录内容</h2>
+      <table>
+        <tr><td><code>update.json</code></td><td>版本清单：版本号、SHA-256、文件大小、更新日志</td></tr>
+        <tr><td><code>update.json.sig</code></td><td>清单的 RSA-SHA256 签名，App 内置公钥验签后才信任</td></tr>
+        <tr><td><code>xiyuantong-v*.apk</code></td><td>整包 APK，仅在原生层 / 权限变更时提示安装</td></tr>
+        <tr><td><code>www-r*.zip</code></td><td>前端热更资源包，下载校验后免安装生效</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>直接下载 / 校验</h2>
+      <table>
+        <tr><td>版本清单</td><td><a href="update.json">update.json</a></td></tr>
+        <tr><td>安装包</td><td><a id="apk" href="#">APK（见清单内文件名）</a></td></tr>
+        <tr><td>热更包</td><td><a id="web" href="#">www-r*.zip（见清单内文件名）</a></td></tr>
+      </table>
+      <p class="note">APK / 热更包的具体文件名随版本变化，请以 <a href="update.json">update.json</a> 为准。</p>
+    </div>
+
+    <div class="card">
+      <h2>在 App 里使用</h2>
+      <p class="note">本目录地址已设为 App 默认更新源。若需手动填写，填到本目录这一层即可（App 会自动补 <code>/update.json</code>）。</p>
+    </div>
+  </div>
+  <script>
+    /* 分享链接带 ?sharecode=xxx，fetch 与文件直链都要带上，否则被 WAF/鉴权拦截 */
+    var qs = location.search || "";
+    fetch('update.json' + qs).then(r => r.json()).then(m => {
+      if (m.apk && m.apk.file) {
+        var a = document.getElementById('apk');
+        a.href = m.apk.file + qs; a.textContent = m.apk.file;
+      }
+      if (m.web && m.web.file) {
+        var w = document.getElementById('web');
+        w.href = m.web.file + qs; w.textContent = m.web.file;
+      }
+    }).catch(() => {});
+  </script>
+</body>
+</html>
