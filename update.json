@@ -2,7 +2,7 @@
   "schema": 1,
   "app": "锡院通",
   "package": "com.yihuan.xiyuantong",
-  "publishedAt": "2026-11-14 18:25",
+  "publishedAt": "2026-11-14 18:38",
   "apk": {
     "versionCode": 12,
     "versionName": "2.10",
@@ -12,12 +12,12 @@
     "changelog": "应用图标与界面更新"
   },
   "web": {
-    "revision": 18,
-    "version": "20261114-r18",
-    "file": "www-r18.dat",
-    "sha256": "5cab80bd6e6147d7cab5d657d2e23b911177fb2a3dcce7a264abcd939742ed90",
-    "size": 5901484,
+    "revision": 19,
+    "version": "20261114-r19",
+    "file": "www-r19.dat",
+    "sha256": "d107cceafeff445165bb0cbaf06dacc55f1726162d1c0e29eb05ef721e1f4912",
+    "size": 5901763,
     "minApkCode": 12,
-    "changelog": "修复更新清单换行符导致的验签失败（改为 LF 并被锁死）"
+    "changelog": "课表：地点可换行并上移、课名放宽到4行（这次真的带上了）"
   }
 }
