@@ -2,7 +2,7 @@
   "schema": 1,
   "app": "锡院通",
   "package": "com.yihuan.xiyuantong",
-  "publishedAt": "2026-11-14 18:46",
+  "publishedAt": "2026-11-14 18:57",
   "apk": {
     "versionCode": 12,
     "versionName": "2.10",
@@ -12,12 +12,12 @@
     "changelog": "应用图标与界面更新"
   },
   "web": {
-    "revision": 21,
-    "version": "20261114-r21",
-    "file": "www-r21.dat",
-    "sha256": "1746e0ea215416a6a00546d7c5b7c2c93a318635eb285d2ddbb95e6644b8c9c8",
-    "size": 5901538,
+    "revision": 22,
+    "version": "20261114-r22",
+    "file": "www-r22.dat",
+    "sha256": "71d4195a311bd5ac980a27b769ac602fb0f1fb8dfb0b6bf722d4421e295cce50",
+    "size": 5901819,
     "minApkCode": 12,
-    "changelog": "课表：课名统一顶格；块内去掉时间改显示老师；文字统一白色"
+    "changelog": "我的：校园实景头图 + 登录后显示姓名；更新入口移到底部"
   }
 }
