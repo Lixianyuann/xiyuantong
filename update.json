@@ -2,22 +2,22 @@
   "schema": 1,
   "app": "锡院通",
   "package": "com.yihuan.xiyuantong",
-  "publishedAt": "2026-11-14 17:49",
+  "publishedAt": "2026-11-14 18:15",
   "apk": {
     "versionCode": 12,
     "versionName": "2.10",
     "file": "xiyuantong-v2.10.apk",
     "sha256": "25d7e0ce39729ef12b49e66f799d3c7b7c0225a79675b9e4d46cedcd6cf7c9e1",
     "size": 6026155,
-    "changelog": "更新源切换到 GitHub；新增应用图标；修复热更基线"
+    "changelog": "应用图标与界面更新"
   },
   "web": {
-    "revision": 15,
-    "version": "20261114-r15",
-    "file": "www-r15.dat",
-    "sha256": "b0b64d1d7f6c9b2954b948defc4d9c0ac9909ba8d71f65f9de38c439f8bfbb60",
+    "revision": 16,
+    "version": "20261114-r16",
+    "file": "www-r16.dat",
+    "sha256": "c7ce5afa296dca4ea0ae65d75fed63e6083751b846147741788e4ee18a88d322",
     "size": 5901485,
     "minApkCode": 12,
-    "changelog": "更新源自 WorkBuddy 迁移到 GitHub，老源自动切换"
+    "changelog": "课表：教室地址改为可换行，内容垂直居中，不再被卡片底边裁切"
   }
 }

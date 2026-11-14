@@ -10,7 +10,7 @@
 | `update.json` | 版本清单（版本号、SHA-256、文件大小、更新日志） |
 | `update.json.sig` | 清单的 RSA-SHA256 签名，App 内置公钥验签后才信任 |
 | `xiyuantong-v2.10.apk` | 整包 APK，只在原生层 / 权限变更时需要用户确认安装 |
-| `www-r15.dat` | 前端热更资源包，下载校验后免安装生效 |
+| `www-r16.dat` | 前端热更资源包，下载校验后免安装生效 |
 | `README.md` | 本说明 |
 
 清单里下载地址写的是**相对文件名**，所以这个目录换个仓库 / 分支 / 域名都不用重新生成。
@@ -21,7 +21,7 @@
 cd D:\AI工作间\学校实用应用开发\android-app\release
 git init
 git add .
-git commit -m "release v2.10 r15"
+git commit -m "release v2.10 r16"
 git branch -M main
 git remote add origin https://github.com/<你的用户名>/<仓库名>.git
 git push -u origin main
@@ -84,4 +84,4 @@ App 启动自检或手动点「检查更新」→ 点「立即热更」→ 自�
 - 热更包是会在 WebView 里执行的 JS，所以验签不能关。要临时关闭验签，
   在 App「更新源设置」里把「清单验签」改成关闭（仅校验包体哈希），不建议长期用。
 
-当前：APK v2.10 (versionCode 12) · 前端 r15 · 生成于 2026-11-14 17:49
+当前：APK v2.10 (versionCode 12) · 前端 r16 · 生成于 2026-11-14 18:15
