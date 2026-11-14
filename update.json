@@ -2,7 +2,7 @@
   "schema": 1,
   "app": "锡院通",
   "package": "com.yihuan.xiyuantong",
-  "publishedAt": "2026-11-14 18:38",
+  "publishedAt": "2026-11-14 18:43",
   "apk": {
     "versionCode": 12,
     "versionName": "2.10",
@@ -12,12 +12,12 @@
     "changelog": "应用图标与界面更新"
   },
   "web": {
-    "revision": 19,
-    "version": "20261114-r19",
-    "file": "www-r19.dat",
-    "sha256": "d107cceafeff445165bb0cbaf06dacc55f1726162d1c0e29eb05ef721e1f4912",
-    "size": 5901763,
+    "revision": 20,
+    "version": "20261114-r20",
+    "file": "www-r20.dat",
+    "sha256": "72c580494dcca05a9dd1dc0800923af43b5158c424d991c1879568907548fb58",
+    "size": 5901465,
     "minApkCode": 12,
-    "changelog": "课表：地点可换行并上移、课名放宽到4行（这次真的带上了）"
+    "changelog": "界面：落实「布局解释、不贴标签」——删复述副标题、操作提示与重复免责"
   }
 }
