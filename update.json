@@ -2,22 +2,22 @@
   "schema": 1,
   "app": "锡院通",
   "package": "com.yihuan.xiyuantong",
-  "publishedAt": "2026-11-14 19:05",
+  "publishedAt": "2026-11-14 19:07",
   "apk": {
-    "versionCode": 13,
-    "versionName": "2.11",
-    "file": "xiyuantong-v2.11.apk",
-    "sha256": "c89228fa0b9e289817ab3553cd6412dd9b4875fa545e393927450e6a23574d40",
+    "versionCode": 14,
+    "versionName": "2.12",
+    "file": "xiyuantong-v2.12.apk",
+    "sha256": "e41d5152768cc8c234823cb65c367fd1f9e33584fba2a82e99e778d39ab16503",
     "size": 6026155,
-    "changelog": "版本 2.11：更新通道换成国内可达镜像（gh-proxy/jsDelivr）+ 超时放宽 + 自动切换可用源；门户同步后显示账号姓名；我的页精简"
+    "changelog": "版本 2.12：更新：清单/签名/包体统一去缓存，修镜像下验签失败；超时放宽并自动切换可用源"
   },
   "web": {
-    "revision": 23,
-    "version": "20261114-r23",
-    "file": "www-r23.dat",
-    "sha256": "4c80e5bc000c83d75c126868fcc9cd61aed0d107d2cff78e2805b287210ff8a5",
+    "revision": 24,
+    "version": "20261114-r24",
+    "file": "www-r24.dat",
+    "sha256": "687353b0fb07a7ae26c17aafe1543b99bc74567496bae5ec55cbed59d9717ad6",
     "size": 5902049,
-    "minApkCode": 13,
-    "changelog": "更新通道换成国内可达镜像（gh-proxy/jsDelivr）+ 超时放宽 + 自动切换可用源；门户同步后显示账号姓名；我的页精简"
+    "minApkCode": 14,
+    "changelog": "更新：清单/签名/包体统一去缓存，修镜像下验签失败；超时放宽并自动切换可用源"
   }
 }
